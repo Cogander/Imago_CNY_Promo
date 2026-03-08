@@ -6,24 +6,20 @@
 
 <title>Imago Creative Group | Jasa Desain, Kreatif & Marketing</title>
 
-<meta name="description" content="Imago Creative Group menyediakan jasa desain visual, kreatif, marketing digital, dan e-book profesional.">
-
 <style>
 
 :root{
 --primary:#ffffff;
---dark:#0a0a0a;
---soft:#f5f7fa;
 }
 
 *{
-box-sizing:border-box;
 margin:0;
 padding:0;
+box-sizing:border-box;
 }
 
 body{
-font-family:'Segoe UI',Arial;
+font-family:Segoe UI,Arial;
 background:#81b61f;
 color:#1a1a1a;
 line-height:1.7;
@@ -35,30 +31,17 @@ nav{
 position:fixed;
 top:0;
 width:100%;
-background:rgba(0,0,0,.9);
+background:#000;
+color:white;
 z-index:100;
 }
 
 .navbox{
 max-width:1200px;
 margin:auto;
-padding:14px 18px;
+padding:15px;
 display:flex;
 justify-content:space-between;
-align-items:center;
-color:#fff;
-}
-
-.nav-links{
-display:flex;
-gap:20px;
-}
-
-.nav-links a{
-color:#fff;
-text-decoration:none;
-font-size:14px;
-font-weight:600;
 }
 
 /* HERO */
@@ -69,13 +52,12 @@ background:
 linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.95)),
 url("https://images.unsplash.com/photo-1492724441997-5dc865305da7");
 background-size:cover;
-background-position:center;
 display:flex;
 align-items:center;
 justify-content:center;
-padding:120px 18px 60px;
 text-align:center;
-color:#fff;
+color:white;
+padding:120px 20px;
 }
 
 .hero h1{
@@ -83,49 +65,41 @@ font-size:48px;
 margin-bottom:20px;
 }
 
-.hero p{
-font-size:18px;
-max-width:800px;
-margin:auto;
-}
-
 /* CTA */
 
 .cta{
 margin-top:30px;
-display:flex;
-gap:15px;
-justify-content:center;
-flex-wrap:wrap;
 }
 
 .cta button{
 padding:14px 36px;
 border-radius:50px;
 border:none;
-font-weight:900;
+font-weight:bold;
 cursor:pointer;
 }
 
-.primary{background:#fff}
+.primary{
+background:white;
+}
 
 .secondary{
 background:transparent;
-border:2px solid #fff;
-color:#fff;
+border:2px solid white;
+color:white;
 }
 
 /* SECTION */
 
 section{
-padding:90px 18px;
+padding:80px 20px;
 max-width:1200px;
 margin:auto;
 }
 
 section h2{
 text-align:center;
-font-size:38px;
+font-size:36px;
 margin-bottom:50px;
 }
 
@@ -138,114 +112,110 @@ gap:30px;
 }
 
 .card{
-background:#fff;
-padding:28px;
-border-radius:22px;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
 
 .divisi{
-font-size:11px;
-text-transform:uppercase;
+font-size:12px;
 color:#777;
 }
 
 .card h3{
-margin:12px 0;
-font-size:20px;
+margin:10px 0;
 }
 
 .card button{
-margin-top:18px;
+margin-top:15px;
 width:100%;
-padding:13px;
-border-radius:12px;
+padding:12px;
 border:none;
-background:#000;
-color:#fff;
-cursor:pointer;
+background:black;
+color:white;
+border-radius:10px;
 }
 
 /* EBOOK */
 
 .ebook{
 background:linear-gradient(135deg,#4ae900,#111);
-color:#fff;
+color:white;
 border-radius:40px;
-padding:90px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
 .discount{
 margin-top:20px;
 font-size:22px;
-font-weight:900;
+font-weight:bold;
 }
 
 /* COUNTDOWN */
 
 .countdown{
-margin:35px 0;
 display:flex;
 justify-content:center;
-gap:12px;
-flex-wrap:wrap;
+gap:10px;
+margin-top:30px;
 }
 
 .time{
-background:#111;
-padding:14px 16px;
-border-radius:14px;
+background:black;
+padding:15px;
+border-radius:10px;
 min-width:70px;
 }
 
 .time span{
-display:block;
 font-size:22px;
-font-weight:900;
+font-weight:bold;
+display:block;
 }
 
-/* TOMBOL EBOOK */
+/* BUTTON EBOOK */
 
 .ebook button{
 margin-top:35px;
 padding:18px 42px;
 border-radius:50px;
-border:2px solid #ffffff;
+border:2px solid white;
 background:transparent;
-color:#ffffff;
+color:white;
 font-size:17px;
-font-weight:900;
+font-weight:bold;
 cursor:pointer;
-transition:0.3s;
+transition:.3s;
 }
 
 .ebook button:hover{
-background:#ffffff;
-color:#000;
+background:white;
+color:black;
 }
 
 /* FOOTER */
 
 footer{
-background:#000;
-color:#fff;
-padding:50px 18px;
+background:black;
+color:white;
 text-align:center;
+padding:40px;
 }
 
-/* DEKORASI KETUPAT */
+/* KETUPAT SVG */
 
 .ketupat{
 position:fixed;
 top:0;
 width:80px;
 z-index:10;
-animation:goyang 4s infinite ease-in-out;
+animation:goyang 4s infinite;
 }
 
-.ketupat.kiri{left:40px}
-.ketupat.kanan{right:40px}
+.kiri{left:30px}
+.kanan{right:30px}
 
 @keyframes goyang{
 0%{transform:rotate(6deg)}
@@ -253,32 +223,9 @@ animation:goyang 4s infinite ease-in-out;
 100%{transform:rotate(6deg)}
 }
 
-/* BINTANG */
-
-.star{
-position:fixed;
-color:white;
-font-size:18px;
-animation:blink 2s infinite alternate;
-}
-
-.star1{top:60px;left:50%}
-.star2{top:120px;left:30%}
-.star3{top:80px;left:70%}
-
-@keyframes blink{
-from{opacity:0.3}
-to{opacity:1}
-}
-
-/* MOBILE */
-
 @media(max-width:768px){
-
 .hero h1{font-size:34px}
-section h2{font-size:30px}
 .ketupat{width:60px}
-
 }
 
 </style>
@@ -286,14 +233,19 @@ section h2{font-size:30px}
 
 <body>
 
-<!-- DEKORASI -->
+<!-- KETUPAT KIRI -->
+<svg class="ketupat kiri" viewBox="0 0 100 100">
+<polygon points="50,5 95,50 50,95 5,50" fill="#1faa00"/>
+<line x1="50" y1="5" x2="50" y2="95" stroke="white" stroke-width="3"/>
+<line x1="5" y1="50" x2="95" y2="50" stroke="white" stroke-width="3"/>
+</svg>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Ketupat_icon.png" class="ketupat kiri">
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Ketupat_icon.png" class="ketupat kanan">
-
-<div class="star star1">★</div>
-<div class="star star2">★</div>
-<div class="star star3">★</div>
+<!-- KETUPAT KANAN -->
+<svg class="ketupat kanan" viewBox="0 0 100 100">
+<polygon points="50,5 95,50 50,95 5,50" fill="#1faa00"/>
+<line x1="50" y1="5" x2="50" y2="95" stroke="white" stroke-width="3"/>
+<line x1="5" y1="50" x2="95" y2="50" stroke="white" stroke-width="3"/>
+</svg>
 
 <!-- HERO -->
 
@@ -302,7 +254,7 @@ section h2{font-size:30px}
 
 <h1>Bangun Brand Digital Yang Menghasilkan</h1>
 
-<p>Partner kreatif & marketing untuk UMKM, bisnis, dan personal brand.</p>
+<p>Partner kreatif & marketing untuk UMKM dan bisnis.</p>
 
 <div class="cta">
 <button class="primary" onclick="scrollToId('layanan')">Lihat Layanan</button>
@@ -312,8 +264,6 @@ section h2{font-size:30px}
 </div>
 </div>
 
-<!-- LAYANAN -->
-
 <section id="layanan">
 
 <h2>Katalog Harga Layanan</h2>
@@ -322,25 +272,23 @@ section h2{font-size:30px}
 
 </section>
 
-<!-- EBOOK -->
-
 <section id="ebook">
 
 <div class="ebook">
 
 <h2>E-book Digital Imago</h2>
 
-<p>E-book berkualitas tinggi untuk membantu Anda mengembangkan bisnis digital.</p>
+<p>E-book berkualitas tinggi untuk membantu Anda mengembangkan bisnis.</p>
 
-<div class="discount">
-Diskon Khusus Hari Raya Idul Fitri 1447 H
-</div>
+<div class="discount">Diskon Hari Raya Idul Fitri</div>
 
 <div class="countdown">
+
 <div class="time"><span id="d">0</span>Hari</div>
 <div class="time"><span id="h">0</span>Jam</div>
 <div class="time"><span id="m">0</span>Menit</div>
 <div class="time"><span id="s">0</span>Detik</div>
+
 </div>
 
 <button onclick="order('E-book Digital Imago (Diskon 10%)')">
@@ -351,7 +299,7 @@ Beli E-book Sekarang
 
 </section>
 
-<footer id="kontak">
+<footer>
 
 <strong>Imago Creative Group</strong><br>
 Instagram: @ImagoCreative.id<br>
@@ -360,8 +308,6 @@ TikTok: @imago.creative.group
 </footer>
 
 <script>
-
-/* SERVICES */
 
 const services=[
 
@@ -393,41 +339,25 @@ const services=[
 const box=document.getElementById("services");
 
 services.forEach(s=>{
-
 box.innerHTML+=`
-
 <div class="card">
 <div class="divisi">Divisi ${s[0]}</div>
 <h3>${s[1]}</h3>
 <p>${s[2]}</p>
 <button onclick="order('${s[1]}')">Pesan via WhatsApp</button>
 </div>
-
 `;
-
 });
 
-/* WHATSAPP */
-
 function order(n){
-
 const wa="6289508551377";
-
-const text=encodeURIComponent(
-"Halo Imago Creative Group, saya ingin memesan: "+n
-);
-
+const text=encodeURIComponent("Halo Imago Creative Group, saya ingin memesan: "+n);
 window.open(`https://wa.me/${wa}?text=${text}`,"_blank");
-
 }
-
-/* SCROLL */
 
 function scrollToId(id){
 document.getElementById(id).scrollIntoView({behavior:"smooth"});
 }
-
-/* COUNTDOWN */
 
 const target=new Date("March 22, 2026 23:59:59").getTime();
 
